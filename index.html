@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Posta Médica Rural - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Salud Rural</a>
+      <div class="navbar-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pacientes.html"><i class="fas fa-users"></i> Pacientes</a></li>
+          <li class="nav-item"><a class="nav-link" href="citas.html"><i class="fas fa-calendar-alt"></i> Citas Médicas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-title">Bienvenido a la Posta Médica Rural</h1>
+      <p class="hero-subtitle">Gestiona pacientes y citas médicas de manera eficiente</p>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <div class="card-grid">
+      <section class="card">
+        <h3 class="card-title">Próximas Citas Médicas</h3>
+        <ul class="list-group" id="lista-citas">
+          <li class="list-group-item">Cargando citas...</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h3 class="card-title">Pacientes Registrados</h3>
+        <ul class="list-group" id="lista-pacientes">
+          <li class="list-group-item">Cargando pacientes...</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>&copy; 2025 Posta Médica Rural - Salud Rural. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderUpcomingAppointments();
+      renderPatientsList();
+    });
+  </script>
+</body>
+</html>
