@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reportes - Posta Médica Rural</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="reportes.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Posta Médica San Antonio</a>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="registro.html" class="nav-link">Registrar Atención</a></li>
+        <li class="nav-item"><a href="atenciones.html" class="nav-link">Atenciones</a></li>
+        <li class="nav-item"><a href="pacientes.html" class="nav-link">Pacientes</a></li>
+        <li class="nav-item"><a href="reportes.html" class="nav-link active">Reportes</a></li>
+        <li class="nav-item"><a href="#" id="logout-general" class="nav-link">Salir</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content container">
+    <h2 class="section-title">📊 Reportes y Estadísticas</h2>
+    <p>Aquí podrás ver datos y gráficos de las atenciones registradas.</p>
+
+    <div id="contenedor-graficos">
+      <canvas id="graficoAtencionesTipo" width="400" height="200"></canvas>
+      <canvas id="graficoAtencionesMes" width="400" height="200"></canvas>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 Posta Médica Rural - Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

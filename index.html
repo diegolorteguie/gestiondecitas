@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Registro Médico Rural</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <section id="login-section" class="login-page">
+    <div class="login-container">
+      <div class="login-header">
+        <i class="fas fa-hospital-alt"></i> Salud Rural
+      </div>
+      <form id="loginForm" class="login-form" autocomplete="off" novalidate>
+        <div class="form-group">
+          <label for="username" class="form-label">Usuario</label>
+          <input type="text" id="username" class="form-control" required placeholder="Ingrese su usuario" />
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" id="password" class="form-control" required placeholder="Ingrese su contraseña" />
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-sign-in-alt"></i> Ingresar
+        </button>
+        <div id="errorMsg" class="text-danger" style="display: none"></div>
+      </form>
+    </div>
+  </section>
+
+  <div id="main-app-content" style="display: none;">
+    <nav class="navbar">
+      <div class="container">
+        <span class="navbar-brand">Posta Médica San Antonio</span>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
+          <li class="nav-item"><a href="registro.html" class="nav-link">Registrar Atención</a></li>
+          <li class="nav-item"><a href="atenciones.html" class="nav-link">Atenciones</a></li>
+          <li class="nav-item"><a href="pacientes.html" class="nav-link">Pacientes</a></li>
+          <li class="nav-item"><a href="reportes.html" class="nav-link">Reportes</a></li>
+          <li class="nav-item"><a href="#" id="logout-main-navbar" class="nav-link">Salir</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="hero">
+      <h1>📋 Sistema de Registro Médico Rural</h1>
+      <p>Bienvenido al sistema de gestión de atenciones de la Posta Médica de San Antonio</p>
+    </header>
+    <main class="main-content container center mt-20">
+      <h2>Objetivo del sistema</h2>
+      <p>
+        Este sistema permite al personal de salud registrar, consultar y organizar fácilmente
+        las atenciones médicas realizadas, asegurando un mejor control y respaldo de la información.
+      </p>
+      <a href="registro.html">
+        <button class="btn-primary">Comenzar Registro</button>
+      </a>
+    </main>
+    <footer class="footer">
+      &copy; 2025 Posta Médica Rural - Todos los derechos reservados.
+    </footer>
+  </div>
+
+  <script defer src="index.js"></script>
+</body>
+</html>
